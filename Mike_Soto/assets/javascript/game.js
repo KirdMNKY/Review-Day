@@ -14,6 +14,7 @@ var userKey = "";
 var guessesLeft = 10;
 var usedUp = [];
 var alphabet = ["a", "b", "c", "d", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var wordList = ["honeypot", "encryption", "cesar cipher", "firewall", "port", "packet", "phishing", "spam", "malware", "trojan", "worm", "ransomware"];
 
 showWord.text("ChosenWordHere");
 showWins.text("0");
