@@ -13,8 +13,17 @@ var userChoice = $("#guesses")
 var userKey = "";
 var guessesLeft = 10;
 var usedUp = [];
+var chosenWordArray = [];
+var userWord = [];
 var alphabet = ["a", "b", "c", "d", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var wordList = ["honeypot", "encryption", "cesar cipher", "firewall", "port", "packet", "phishing", "spam", "malware", "trojan", "worm", "ransomware"];
+
+var chosenWord = wordList[parseInt(Math.random()*wordList.length)];
+console.log(chosenWord);
+for(var i = 0; i < chosenWord.length; i++){
+    chosenWordArray[i] = chosenWord[i];
+}
+console.log(chosenWordArray);
 
 showWord.text("ChosenWordHere");
 showWins.text("0");
